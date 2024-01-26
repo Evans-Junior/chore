@@ -9,7 +9,7 @@ export default function SignUp() {
     email:'', 
     password:'',
     terms:'',
-    confirmPassword=''
+    confirmPassword:''
   })
   const [errors,setErrors] = useState({})
 
@@ -35,7 +35,7 @@ export default function SignUp() {
         </div>
         <div className='' style={{margin:"0 0 1rem 0"}} >
           <label htmlFor='email'><strong>Email</strong></label>
-          <input type="email" onChange={handleInput} name="email"  placeholder='Enter Email' className='form-control rounded-2' style={{fontSize:"12px",minWidth:"300px",minHeight:"50px"}}/>
+          <input onChange={handleInput} name="email"  placeholder='Enter Email' className='form-control rounded-2' style={{fontSize:"12px",minWidth:"300px",minHeight:"50px"}}/>
           {errors.email && <span className="text-danger" style={{fontSize:"9px", maxWidth:"300px"}}>{errors.email}</span>}
         </div>
         <div className='' style={{margin:"0 0 1rem 0"}} >
@@ -44,7 +44,7 @@ export default function SignUp() {
           {errors.password && <span className="text-danger" style={{fontSize:"9px", maxWidth:"300px"}}>{errors.password}</span>}
         </div>
         <div className='' style={{margin:"0 0 1rem 0"}} >
-          <label htmlFor='Password'><strong>Password</strong></label>
+          <label htmlFor='Password'><strong>Confirm Password</strong></label>
           <input type="Password" onChange={handleInput} placeholder='Enter Confirm Password' name='confirmPassword' className='form-control rounded-2' style={{fontSize:"12px",minWidth:"300px",minHeight:"50px"}}/>
           {errors.confirmPassword && <span className="text-danger" style={{fontSize:"9px", maxWidth:"300px"}}>{errors.confirmPassword}</span>}
         </div>

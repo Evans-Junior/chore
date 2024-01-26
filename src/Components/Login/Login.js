@@ -25,7 +25,7 @@ export default function Login() {
         <form action='' style={{margin:"1rem "}} onSubmit={handleSubmit} >
           <div className='' style={{margin:"0 0 1rem 0"}} >
             <label htmlFor='email'><strong>Email</strong></label>
-            <input onChange={handleInput} type="email" name='email' placeholder='Enter Email' className='form-control rounded-2' style={{fontSize:"12px",minWidth:"300px",minHeight:"50px"}}/>
+            <input onChange={handleInput}  name='email' placeholder='Enter Email' className='form-control rounded-2' style={{fontSize:"12px",minWidth:"300px",minHeight:"50px"}}/>
             {errors.email && <span className="text-danger" style={{fontSize:"9px", maxWidth:"300px"}}>{errors.email}</span>}
           </div>
           <div className='' style={{margin:"0 0 1rem 0"}} >

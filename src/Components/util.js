@@ -39,7 +39,12 @@ export function signupValidation(values) {
     } else {
       error.email = '';
     }
-  
+    if (values.confirmPassword===''){
+      error.confirmPassword = 'Confirm Password should not be empty';
+
+    }else if(values.password !== values.confirmPassword) {
+      error.confirmPassword = 'Passwords does not match';
+    }
     if (values.password === '') {
       error.password = 'Password should not be empty';
     } else if (!password_pattern.test(values.password)) {
