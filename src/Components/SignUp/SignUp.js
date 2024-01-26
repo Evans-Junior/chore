@@ -8,7 +8,8 @@ export default function SignUp() {
     name:'',
     email:'', 
     password:'',
-    terms:''
+    terms:'',
+    confirmPassword=''
   })
   const [errors,setErrors] = useState({})
 
@@ -41,6 +42,11 @@ export default function SignUp() {
           <label htmlFor='Password'><strong>Password</strong></label>
           <input type="Password" onChange={handleInput} placeholder='Enter Password' name='password' className='form-control rounded-2' style={{fontSize:"12px",minWidth:"300px",minHeight:"50px"}}/>
           {errors.password && <span className="text-danger" style={{fontSize:"9px", maxWidth:"300px"}}>{errors.password}</span>}
+        </div>
+        <div className='' style={{margin:"0 0 1rem 0"}} >
+          <label htmlFor='Password'><strong>Password</strong></label>
+          <input type="Password" onChange={handleInput} placeholder='Enter Confirm Password' name='confirmPassword' className='form-control rounded-2' style={{fontSize:"12px",minWidth:"300px",minHeight:"50px"}}/>
+          {errors.confirmPassword && <span className="text-danger" style={{fontSize:"9px", maxWidth:"300px"}}>{errors.confirmPassword}</span>}
         </div>
         <p className='sign-up-info' style={{fontSize:'12px', margin:"8px 0 16px 0",textAlign:'center'}}>
         Do you agrer to the terms and conditions? <input onChange={handleInput} type="checkbox" name="terms" id="terms" />
