@@ -1,0 +1,53 @@
+.create-task-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark and semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .create-task-container {
+    background-color: #333; /* Dark background color for the task container */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .create-task-container h2 {
+    color: white; /* Text color */
+  }
+  
+  .create-task-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .create-task-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .create-task-buttons button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .create-task-buttons button:nth-child(1) {
+    background-color: #4caf50; /* Green color for "Create Task" button */
+    color: white;
+  }
+  
+  .create-task-buttons button:nth-child(2) {
+    background-color: #f44336; /* Red color for "Cancel" button */
+    color: white;
+  }
+  
+  /* Add any additional styling based on your preferences */
+  
